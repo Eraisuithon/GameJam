@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
+        player = GameObject.Find("Player").transform;
     }
 
     // Update is called once per frame
@@ -34,8 +35,13 @@ public class Enemy : MonoBehaviour
     {
         float distSquared = (transform.position.x - player.transform.position.x) * (transform.position.x - player.transform.position.x) +
                             (transform.position.y - player.transform.position.y) * (transform.position.y - player.transform.position.y);
-        if (distSquared < 2) return; // 2 is chosen arbitery
+        if (distSquared < 2) hit(); // 2 is chosen arbitery
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
+    }
+
+    void hit()
+    {
+        Destroy(gameObject);
     }
 
     void OnMouseDown()
@@ -44,7 +50,7 @@ public class Enemy : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        moveSpeed = 1f;
+        moveSpeed = 3f;
     }
     void OnCollisionExit2D(Collision2D collision)
     {
