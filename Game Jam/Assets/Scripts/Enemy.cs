@@ -32,6 +32,9 @@ public class Enemy : MonoBehaviour
 
     void moveCharacter(Vector2 direction)
     {
+        float distSquared = (transform.position.x - player.transform.position.x) * (transform.position.x - player.transform.position.x) +
+                            (transform.position.y - player.transform.position.y) * (transform.position.y - player.transform.position.y);
+        if (distSquared < 2) return; // 2 is chosen arbitery
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
 }
