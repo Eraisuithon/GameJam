@@ -68,7 +68,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""positive"",
+                    ""name"": ""negative"",
                     ""id"": ""87cbc722-f730-4366-9b5f-726afd7166e8"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
@@ -79,7 +79,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""negative"",
+                    ""name"": ""positive"",
                     ""id"": ""b9f8257b-1aca-457f-9be9-b1bd12eae8f5"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",

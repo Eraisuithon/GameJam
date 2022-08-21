@@ -3,46 +3,22 @@
 
 public class GroundCheck : MonoBehaviour
 {
-    private bool onGround;
-    private float friction;
+    public Vector3 offset;
+    public float radius;
+    public LayerMask groundLayer;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public bool IsGrounded(Vector2 direction)
     {
-        EvaulateCollisions(collision);
-        RetrieveFriction(collision);
+        Vector3 _offset = transform.position + offset;
+        var grounded = Physics2D.CircleCast(_offset, radius, direction, radius, groundLayer);
+        return grounded;
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnDrawGizmos()
     {
-        EvaulateCollisions(collision);
-        RetrieveFriction(collision);
-    }
+        Gizmos.color = Color.yellow;
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        onGround = false;
-        friction = 0;
+        var _offset = transform.position + offset;
+        Gizmos.DrawWireSphere(_offset, radius);
     }
-
-    private void EvaulateCollisions(Collision2D collision)
-    {
-        for (int i = 0; i < collision.contactCount; i++)
-        {
-            Vector2 normal = collision.GetContact(i).normal;
-            onGround |= normal.y >= 0.9f;
-        }
-    }
-
-    private void RetrieveFriction(Collision2D collision)
-    {
-        PhysicsMaterial2D material = collision.rigidbody.sharedMaterial;
-        friction = 0;
-        if(material != null)
-        {
-            friction = material.friction;
-        }
-    }
-
-    public bool GetGround() => onGround;
-    public float GetFriction() => friction;
 }
