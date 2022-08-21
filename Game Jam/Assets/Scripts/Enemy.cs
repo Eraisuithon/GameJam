@@ -37,4 +37,9 @@ public class Enemy : MonoBehaviour
         if (distSquared < 2) return; // 2 is chosen arbitery
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
+
+    void OnMouseDown()
+    {
+        Destroy(gameObject);
+    }
 }
