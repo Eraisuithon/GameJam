@@ -42,4 +42,12 @@ public class Enemy : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        moveSpeed = 1f;
+    }
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        moveSpeed = 5f;
+    }
 }
