@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 8748225966292465435}
   - component: {fileID: 8748225966292465436}
   - component: {fileID: 2017224926}
+  - component: {fileID: 1418417430442381982}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -232,6 +233,20 @@ MonoBehaviour:
     m_DissipationDistance: 100
     m_PropagationSpeed: 343
   m_DefaultVelocity: {x: 0.1, y: -1, z: 0}
+--- !u!114 &1418417430442381982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8748225966292465426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4728acee30ae26341be6db00dde24dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenShake: {fileID: 2017224926}
+  powerAmount: 0
 --- !u!1 &8748225966610044989
 GameObject:
   m_ObjectHideFlags: 0
