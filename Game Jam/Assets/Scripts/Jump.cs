@@ -8,8 +8,11 @@ public class Jump : MonoBehaviour
 
     [Range(0, 20)]
     public float jumpVelocity;
-    public float fallMultiplier = 2.5f;
-    public float lowJumpMulitplier = 2f;
+    public float jumpHoldGravityMulitplier = 2.5f;
+    public float freeFallGravityMultiplier = 2f;
+
+    [Header("Effects")]
+    public GameObject Effect;
 
     private void Awake()
     {
@@ -19,21 +22,30 @@ public class Jump : MonoBehaviour
 
     private void JumpTriggered()
     {
-        rb.velocity = new Vector2
+        if (manager.ground.CheckOnGround())
         {
-            x = rb.velocity.x,
-            y = jumpVelocity
-        };
+
+            rb.velocity = new Vector2
+            {
+                x = rb.velocity.x,
+                y = jumpVelocity
+            };
+
+            manager.shake.ShakeScreen();
+            Instantiate(Effect, transform.position, Quaternion.identity);
+
+        }
     }
 
     private void Update()
     {
         if (rb.velocity.y < 0)
         {
-            rb.velocity += (fallMultiplier - 1) * Physics2D.gravity.y * Time.deltaTime * Vector2.up;
+            rb.velocity += (jumpHoldGravityMulitplier - 1) * Physics2D.gravity.y * Time.deltaTime * Vector2.up;
+
         } else if(rb.velocity.y > 0 && !InputManager.Instance.GetJumpHold())
         {
-            rb.velocity += (lowJumpMulitplier - 1) * Physics2D.gravity.y * Time.deltaTime * Vector2.up;
+            rb.velocity += (freeFallGravityMultiplier - 1) * Physics2D.gravity.y * Time.deltaTime * Vector2.up;
         } 
 
 

@@ -1,6 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Ground))]
+[RequireComponent(typeof(CameraShake))]
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerManager : MonoBehaviour
 {
@@ -11,11 +12,13 @@ public class PlayerManager : MonoBehaviour
     [HideInInspector] public Dash dash_Script;
     [HideInInspector] public Ground ground;
     [HideInInspector] public Rigidbody2D rb;
+    [HideInInspector] public CameraShake shake;
 
     private void Awake()
     {
         ground = GetComponent<Ground>();
         inputManager = InputManager.Instance;
+        shake = GetComponent<CameraShake>();
         rb = GetComponent<Rigidbody2D>();
 
         if (settings.playerType == PlayerTypeSO.PlayerType.Player)
