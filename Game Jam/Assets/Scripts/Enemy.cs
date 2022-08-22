@@ -7,21 +7,30 @@ public class Enemy : MonoBehaviour
     public Transform player;
     private Rigidbody2D rb;
     private Vector2 movement;
-    private float moveSpeed = 5f;
+    private float moveSpeed = 2f;
+    Vector3 direction;
+
 
     // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
         player = GameObject.Find("Player").transform;
+        direction = player.position - transform.position + new Vector3(Random.Range(-3, 3), Random.Range(-3, 3), 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 direction = player.position - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        rb.rotation = angle;
+        if (seePlayer())
+        {
+            direction = player.position - transform.position;
+            moveSpeed = 5f;
+        }
+        else
+        {
+            moveSpeed = 2f;
+        }
         direction.Normalize();
         movement = direction;
     }
@@ -50,10 +59,18 @@ public class Enemy : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        moveSpeed = 3f;
+        moveSpeed /= 2;
     }
     void OnCollisionExit2D(Collision2D collision)
     {
-        moveSpeed = 5f;
+        moveSpeed *= 2;
+    }
+    private bool seePlayer()
+    {
+        RaycastHit2D hit = Physics2D.Linecast(transform.position, player.position);
+        if (hit.collider != null && hit.collider.name == "Player")
+            return true;
+        Debug.Log(hit.collider.name);
+        return false;
     }
 }
