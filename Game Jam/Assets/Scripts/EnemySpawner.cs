@@ -6,13 +6,13 @@ public class EnemySpawner : MonoBehaviour
 {
     public Transform[] spawnPoints;
     public GameObject[] enemyPrefabs;
-    public float timer = 0;
+    public int seconds = 2;
+    private float timer = 0;
 
 
     // Update is called once per frame
     void Update()
     {
-        int seconds = 2; // Every 2 seconds enemy spawns
         if (timer > seconds) 
         {
             timer -= seconds;
@@ -22,6 +22,5 @@ public class EnemySpawner : MonoBehaviour
             Instantiate(enemyPrefabs[0], spawnPoints[randSpawnPoints].position, transform.rotation);
         }
         timer += Time.deltaTime;
-
     }
 }
