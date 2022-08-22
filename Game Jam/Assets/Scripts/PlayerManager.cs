@@ -14,6 +14,7 @@ public class PlayerManager : MonoBehaviour
     {
         if(settings.playerType == PlayerTypeSO.PlayerType.Player)
         {
+            print("player");
             TryGetPlayerFiles();
             if (motor_Script != null) motor_Script.enabled = true;
             if (jump_Script != null) jump_Script.enabled = true;
@@ -22,6 +23,7 @@ public class PlayerManager : MonoBehaviour
         else if(settings.playerType == PlayerTypeSO.PlayerType.Shooter)
         {
             // TODO
+            print("Shooter");
         }
 
         inputManager = InputManager.Instance;
