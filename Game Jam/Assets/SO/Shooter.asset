@@ -12,7 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f52e32dea57d1b49bdff16227099318, type: 3}
   m_Name: Shooter
   m_EditorClassIdentifier: 
-  playerType: 0
-  motor: {fileID: 0}
-  jump: {fileID: 0}
-  dash: {fileID: 0}
+  playerType: 1
