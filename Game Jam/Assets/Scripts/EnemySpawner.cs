@@ -24,7 +24,6 @@ public class EnemySpawner : MonoBehaviour
             int randSpawnPoints = Random.Range(0, spawnPoints.Length);
 
             Instantiate(enemyPrefabs[0], spawnPoints[randSpawnPoints].position, transform.rotation);
-
         }
         timer += Time.deltaTime;
 
