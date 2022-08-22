@@ -4,52 +4,34 @@ using UnityEngine;
 
 public class Ground : MonoBehaviour
 {
-    private bool onGround;
-    private float friction;
+    [Header("Privates")]
+    [SerializeField] private bool onGround;
+    [SerializeField] private float friction;
     public float GetFriction => friction;
     public bool GetOnGround => onGround;
 
-    public float radius;
-    public Vector3 offset;
-    public LayerMask groundLayer;
-    public Vector2 direction;
+    [Header("Variables")]
     public bool ContinousGroundCheck;
+    public LayerMask groundLayer;
+    public Vector3 offset;
+    public Vector2 direction;
 
-    public void CheckOnGround()
+    public bool CheckOnGround()
     {
-        onGround = Physics2D.CircleCast(transform.position + offset, (radius / 2), direction, groundLayer);
+        return Physics2D.Linecast(transform.position, transform.position + offset, groundLayer);
     }
 
     private void Update()
     {
-        if (ContinousGroundCheck) CheckOnGround();
+        if (ContinousGroundCheck) onGround = CheckOnGround();
     }
 
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnDrawGizmos()
     {
-        RetrieveFriction(collision);
-        CheckOnGround();
+        Gizmos.color = Color.black;
+        Gizmos.DrawLine(transform.position, transform.position + offset);
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        RetrieveFriction(collision);
-        CheckOnGround();
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        friction = 0;
-        onGround = false;
-    }
-
-    private void RetrieveFriction(Collision2D collision)
-    {
-        PhysicsMaterial2D material = collision.rigidbody.sharedMaterial;
-        friction = 0;
-        if (material != null) friction = material.friction;
-    }
 
    
 }
