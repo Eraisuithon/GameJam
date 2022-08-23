@@ -10,6 +10,7 @@ public class Jump : MonoBehaviour
     public float jumpVelocity;
     public float jumpHoldGravityMulitplier = 2.5f;
     public float freeFallGravityMultiplier = 2f;
+    public float extaGravity;
 
     [Header("Effects")]
     public GameObject Effect;
@@ -25,11 +26,14 @@ public class Jump : MonoBehaviour
         if (manager.ground.CheckOnGround())
         {
 
-            rb.velocity = new Vector2
-            {
-                x = rb.velocity.x,
-                y = jumpVelocity
-            };
+            //rb.velocity = new Vector2
+            //{
+            //    x = rb.velocity.x,
+            //    y = jumpVelocity
+            //};
+
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+            rb.AddForce(jumpVelocity * Vector2.up , ForceMode2D.Impulse);
 
             manager.shake.ShakeScreen();
             Instantiate(Effect, transform.position, Quaternion.identity);
@@ -39,6 +43,7 @@ public class Jump : MonoBehaviour
 
     private void Update()
     {
+        rb.AddForce(extaGravity * Vector2.down);
         if (rb.velocity.y < 0)
         {
             rb.velocity += (jumpHoldGravityMulitplier - 1) * Physics2D.gravity.y * Time.deltaTime * Vector2.up;

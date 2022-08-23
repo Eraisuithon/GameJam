@@ -67,7 +67,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""name"": ""Pointer position"",
                     ""type"": ""Value"",
                     ""id"": ""4d2449e4-3dcb-4d8b-a3dc-1434ca3b7303"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true

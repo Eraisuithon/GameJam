@@ -6,7 +6,6 @@ using Cinemachine;
 public class CameraShake : MonoBehaviour
 {
     [SerializeField] CinemachineImpulseSource screenShake;
-    [SerializeField] float powerAmount;
 
     public void ShakeScreen()
     {

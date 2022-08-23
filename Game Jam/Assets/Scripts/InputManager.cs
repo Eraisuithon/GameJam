@@ -21,9 +21,11 @@ public class InputManager : MonoBehaviour
 
     private float _horizontalInput;
     private bool _jumpHold;
+    private Vector2 mousePos;
 
     public float GetHorizontalInput() => _horizontalInput;
     public bool GetJumpHold() => _jumpHold;
+    public Vector2 GetMousePos() => mousePos;
 
     public delegate void JumpTriggered();
     public event JumpTriggered OnJumpTriggered;
@@ -48,6 +50,11 @@ public class InputManager : MonoBehaviour
     public void OnDash(InputAction.CallbackContext ctx)
     {
         if (ctx.started) OnDashTriggered?.Invoke();
+    }
+
+    public void OnPointerMove(InputAction.CallbackContext ctx)
+    {
+        mousePos = ctx.ReadValue<Vector2>();
     }
 
 
