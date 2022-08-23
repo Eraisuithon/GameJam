@@ -31,8 +31,12 @@ public class FollowMousePos : MonoBehaviour
             {
                 if (RigidbodyMovePos)
                 {
-                    rb.MovePosition(
-                        rb.position + followSpeed * Time.deltaTime * (mouseWorldPos - rb.position));
+
+                    Vector3 mouseInput = cam.ScreenToWorldPoint(Input.mousePosition);
+                    Vector2 mouseInputVector2 = new Vector2(mouseInput.x, mouseInput.y);
+
+                    rb.MovePosition(rb.position + followSpeed * Time.deltaTime * (mouseInputVector2 - rb.position));
+
                 }
                 else rb.position = mouseWorldPos;
             }
@@ -42,20 +46,26 @@ public class FollowMousePos : MonoBehaviour
             }
         }
     }
-
+    /*
     private void LateUpdate()
     {
         if (RigidbodyFollow && rb != null)
         {
             if (RigidbodyMovePos)
             {
-                rb.MovePosition(
-                    rb.position + followSpeed * Time.deltaTime * (mouseWorldPos - rb.position));
+
+                Vector3 mouseInput = cam.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 mouseInputVector2 = new Vector2(mouseInput.x, mouseInput.y);
+
+                rb.MovePosition(rb.position + followSpeed * Time.deltaTime * (mouseInputVector2 - rb.position));
+
             }
             else rb.position = mouseWorldPos;
         }
         else
+        {
             transform.position = mouseWorldPos;
+        }
     }
 
     private void FixedUpdate()
@@ -64,13 +74,21 @@ public class FollowMousePos : MonoBehaviour
         {
             if (RigidbodyMovePos)
             {
-                rb.MovePosition(
-                    rb.position + followSpeed * Time.deltaTime * (mouseWorldPos - rb.position));
+
+                Vector3 mouseInput = cam.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 mouseInputVector2 = new Vector2(mouseInput.x, mouseInput.y);
+
+                rb.MovePosition(rb.position + followSpeed * Time.deltaTime * (mouseInputVector2 - rb.position));
+
             }
             else rb.position = mouseWorldPos;
         }
         else
+        {
             transform.position = mouseWorldPos;
+        }
     }
+    */
+
 
 }
