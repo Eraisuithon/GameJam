@@ -26,8 +26,9 @@ public class Shoot : MonoBehaviour
     IEnumerator shoot()
     {
         isShooting = true;
-        GameObject newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
-        newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(shootSpeed * Time.fixedDeltaTime, 0f);
+        GameObject newBullet = Instantiate(bullet, transform.position, transform.rotation);
+        float radToDegrees = transform.rotation.eulerAngles.z * Mathf.PI / 180;
+        newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(shootSpeed * Time.fixedDeltaTime * Mathf.Cos(radToDegrees), shootSpeed * Time.fixedDeltaTime * Mathf.Sin(radToDegrees));
         yield return new WaitForSeconds(shootTimer);
         isShooting = false;
     }
