@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 6338466175287549118}
   - component: {fileID: -2902572479597084148}
   - component: {fileID: -2944398887608907847}
-  - component: {fileID: -3023454876889539326}
   m_Layer: 2
   m_Name: Enemy
   m_TagString: Untagged
@@ -103,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdbb984abd1a4154aaa4e1307ebdef34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2829875128535522915, guid: 0cf7d8b879cec4e4286102beda1f9e0e, type: 3}
+  hp: 2
 --- !u!50 &1496264415841794014
 Rigidbody2D:
   serializedVersion: 4
@@ -235,15 +234,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
---- !u!114 &-3023454876889539326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496264415841794010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8be8e5da01e3e6a4187eb5c074931e78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
