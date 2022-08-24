@@ -8,6 +8,8 @@ public class Shoot : MonoBehaviour
 
     private bool isShooting;
 
+    public AudioSource gunFireSound;
+
     public GameObject bullet;
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,9 @@ public class Shoot : MonoBehaviour
         GameObject newBullet = Instantiate(bullet, transform.position, transform.rotation);
         float radToDegrees = transform.rotation.eulerAngles.z * Mathf.PI / 180;
         newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(shootSpeed * Time.fixedDeltaTime * Mathf.Cos(radToDegrees), shootSpeed * Time.fixedDeltaTime * Mathf.Sin(radToDegrees));
+
+        gunFireSound.Play();
+
         yield return new WaitForSeconds(shootTimer);
         isShooting = false;
     }

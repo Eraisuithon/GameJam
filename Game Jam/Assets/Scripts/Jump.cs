@@ -14,6 +14,7 @@ public class Jump : MonoBehaviour
 
     [Header("Effects")]
     public GameObject Effect;
+    public AudioSource jumpSound;
 
     private void Awake()
     {
@@ -31,6 +32,8 @@ public class Jump : MonoBehaviour
             //    x = rb.velocity.x,
             //    y = jumpVelocity
             //};
+
+            jumpSound.Play();
 
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(jumpVelocity * Vector2.up , ForceMode2D.Impulse);

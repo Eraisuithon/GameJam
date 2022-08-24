@@ -7,6 +7,14 @@ public class BulletHit : MonoBehaviour
 
     [Header("Effects")]
     public GameObject Effect;
+    public AudioSource hitSound;
+    public AudioSource dieSound;
+
+    private GameObject SoundController;
+    void Start()
+    {
+        SoundController = GameObject.Find("Sound Controller");
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -23,7 +31,14 @@ public class BulletHit : MonoBehaviour
             Instantiate(Effect, transform.position, Quaternion.identity);
             float hp = --collisionGameObject.GetComponent<Enemy>().hp;
             if (hp <= 0)
+            {
+                SoundController.GetComponent<SoundController>().playEnemyDieSound();
                 EnemyDie(collisionGameObject);
+            }
+            else
+            {
+                SoundController.GetComponent<SoundController>().playHitSound();
+            }
         }
     }
     void BulletDie()

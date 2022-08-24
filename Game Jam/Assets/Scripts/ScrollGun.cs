@@ -11,6 +11,5 @@ public class ScrollGun : MonoBehaviour
     {
         float angle = Input.mouseScrollDelta.y * scale;
         transform.Rotate(0, 0, angle);
-
     }
 }
