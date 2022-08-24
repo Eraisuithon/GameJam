@@ -5,10 +5,14 @@ using UnityEngine;
 public class BulletHit : MonoBehaviour
 {
 
+    [Header("Effects")]
+    public GameObject Effect;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject collisionGameObject = collision.gameObject;
         Debug.Log(collisionGameObject.layer);
+
 
         if (collisionGameObject.name != "Player")
         {
@@ -16,6 +20,7 @@ public class BulletHit : MonoBehaviour
         }
         if (collisionGameObject.name == "Enemy(Clone)")
         {
+            Instantiate(Effect, transform.position, Quaternion.identity);
             EnemyDie(collisionGameObject);
         }
     }
