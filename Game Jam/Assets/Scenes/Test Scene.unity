@@ -1339,7 +1339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAQIew0w8OlXQIAABIFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VMFymzAQ/RWPznUHHFPHvbW24/SQxBOnkwuXNSxGYyExkojtePzvXQkwlE5PiPfe7r5dLVwYl6bExCq91jx9Uimy7yPmzuzLqCMf8QR7Jbf8E1vNO09t7kTgNa9guSI8dGFGFWg1T37IvXDigMBK8kzpYpXucaGMNQRnIAwSpZV10ZKgy4id6DGeu5AznSYzd/qk0zwYXemYoLSoO2krbGW1qpKJgKLE1FnuxHdRow5nXiapmUbhjCdKCG4aJ8yeS9/ptsxRo2s15UCN+ep39Joj3+fWmezHvmSZQds40nBeck3zqZOyn6oeWgHmUNv6AFG5MlE48ZbqpE//8OPQ05lWxWNbNwxcDZvz5PAK5wSM7U21Dy8746GfzhHEAXYC33OUz2qtVSVTIq2uXGhlcLLsXm+tLXJMDh1eWx2AVfn/u3E9XH33p4Xgxc5RX6c1sBXKj9vfPGq6mF9k2O+FaVIQ6lz8NvgG+/4CNcQD18YS1XQpnb2dqrSTspWfmeumsgulJXq4MV2iBGHPG0pjh1c44HplB8wDuE+lKd5w7RcwCPFwpw+CAbVRx9tlmVwdn9DkL5UVXGJn2hHPNKeFkrLesP5M2rBtpTNIemH7iqd/rxbbwTycYgCz+2kWhFE2hsl0+m0eRRFE97tkFjK/e1xSnyA2tdFmPHRrsksuac/aP8horaH0255qOK75Z6H6BrnM1DbRiPKlTnFzjpqq0FeZrlJOE9qitVz6C2eXmAmVHDCNbzVj3+rqZDXEXZaYlfxDWYfEbOH/GTFz8G2ZNxo/OB5d8TbZlV3/AFBLAwQUAAAICAAAECHs3bWmWW0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0UlKipaFJqkGiuYVJmoGhaZpuopGJiZmlqalpoqlFUrK5oVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAECHsNMPDpV0CAAASBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAECHs3bWmWW0AAAB4AAAACQAkAAAAAAAAAAAAAACqAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAGIDAAAAAA==
+    dataString: UEsDBBQAAAgIAAAQIex+5pNyXgIAABQFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1zmzAQ/SsenesOUNPEvbWO4/SQ2BOnkwuXNSxGYyExkog/Mv7vXQkwlJ4Q771dvf2AT8alqTC1Sq80z55VhuzHhLkz+zLpySc8wV7JLb9gp3nnmS2cCLzmFSxXhIcuzKgSrebpT7kXThwQWEueK10usz0ulLGG4ByEQaK0si5aEvQ5YSd6TOcu5Eyn6M6dLnSaB5MrHVOUFnUvjaK4lXbCRlfLVEBZYeZM9/I4uGVudJLqaSXOe6qE4KY1w+y58sVuqwI1umozDlSbN/CNXgvk+8K6bMPYdZ4btK0lDecHrqlFTVL2SzV9K8EcGl8fIGp3TRxG3lKT9Pk/fhp6OteqfOruDX09tuDp4RXOKRg7aOwQfuiNh749RxAH2Al8L1C+qJVWtcyItLp2obXB6KF/vZW2KDA99HhjdQTWVd/vYDQcV8PVV39aCF7uHPV11gBboXy7/fBR02B+k2G/GqZNQahz8cfgG+yHO9QSj1wbS1RbpXT2dqrWTsqWvmeumtoulJbo4dZ0hRKEPW8ojR2PcMQNrh0xj+C+lvbylus+glGIh3t9EIyojTrehmUKdXxGU6xrK7jE3rQjXqhPCyVls2HDnnRh21rnkA7C9jXP/l0ttoN5OMMA7u5neRDG+RSi2ez7PI5jiO936V3I/O5xSXWC2DRG2/bQ1GSfXNKedT+RyUpD5bc903Bc8UupBi3nMlfbVCPKdZPhZhw1XUIfZbbMODVoi9Zy6efNPhMmVHrALLklSnyly5PVkPRZElbxD2UdkrCF/2skzMG3Xd5o/OB4dJd3ya7s+hdQSwMEFAAACAgAABAh7N21plltAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tFJSoqWhSapBormFSZqBoWmabqKRiYmZpampaaKpRVKyuaFSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAABAh7H7mk3JeAgAAFAUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAABAh7N21plltAAAAeAAAAAkAJAAAAAAAAAAAAAAAqwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABjAwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -1586,6 +1586,90 @@ Transform:
   - {fileID: 222353675}
   m_Father: {fileID: 0}
   m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1916851218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1916851220}
+  - component: {fileID: 1916851219}
+  m_Layer: 0
+  m_Name: Background - Night Sky
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1916851219
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916851218}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: cb3aad6515ec2c54ea75b097cb2704f3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.28, y: 0.64}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1916851220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916851218}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1926781435
 GameObject:
