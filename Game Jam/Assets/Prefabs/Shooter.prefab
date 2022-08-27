@@ -94,9 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77cf53f3c72b22e46b45a1d72bb47f95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onGround: 0
   friction: 0
-  ContinousGroundCheck: 1
+  animator: {fileID: 0}
+  onGround: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -202,8 +202,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mode: 0
   RigidbodyFollow: 0
-  followSpeed: 0
   RigidbodyMovePos: 0
+  followSpeed: 0
 --- !u!1 &8396970325607859072
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +278,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e9b1bb9761a5dbd43b389974b4123a66, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 58e1230875548e841a02d4a206ce5149, type: 3}
   m_Color: {r: 0.5647059, g: 0.33469692, b: 0.24313724, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -306,7 +306,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.09, y: 0.09}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
