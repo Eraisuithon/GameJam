@@ -16,9 +16,16 @@ public class Ground : MonoBehaviour
     public Vector3 offset;
     public Vector2 direction;
 
+    private Collider2D playerCollider;
+
+    void Awake()
+    {
+        playerCollider = GameObject.Find("Frictionless").GetComponent<Collider2D>();
+    }
+
     public bool CheckOnGround()
     {
-        return Physics2D.Linecast(transform.position, transform.position + offset, groundLayer);
+        return GetComponent<Collider2D>().IsTouching(playerCollider);
     }
 
     private void Update()
@@ -32,6 +39,4 @@ public class Ground : MonoBehaviour
         Gizmos.DrawLine(transform.position, transform.position + offset);
     }
 
-
-   
 }

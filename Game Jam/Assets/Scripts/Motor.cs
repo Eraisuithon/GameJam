@@ -29,6 +29,14 @@ public class Motor : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
+        if(direction.x > 0)
+        {
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        }
+        else if(direction.x < 0)
+        {
+            transform.localScale = new Vector3(-1f, 1f, 1f);
+        }
     }
 
     private void Move()
