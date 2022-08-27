@@ -7,6 +7,7 @@ public class Ground : MonoBehaviour
     [Header("Privates")]
     [SerializeField] private bool onGround;
     [SerializeField] private float friction;
+    [SerializeField] private Animator animator;
     public float GetFriction => friction;
     public bool GetOnGround => onGround;
 
@@ -25,7 +26,8 @@ public class Ground : MonoBehaviour
 
     public bool CheckOnGround()
     {
-        return GetComponent<Collider2D>().IsTouching(playerCollider);
+        bool isOnGround = GetComponent<Collider2D>().IsTouching(playerCollider);
+        return isOnGround;
     }
 
     private void Update()

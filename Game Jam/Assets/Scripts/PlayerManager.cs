@@ -39,4 +39,5 @@ public class PlayerManager : MonoBehaviour
         if (TryGetComponent<Dash>(out Dash dash)) dash_Script = GetComponent<Dash>();
     }
 
+
 }

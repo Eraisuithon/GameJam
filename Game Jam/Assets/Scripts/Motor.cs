@@ -10,6 +10,7 @@ public class Motor : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float maxSpeed;
     [SerializeField] private float Acceleration;
+    [SerializeField] private Animator animator;
 
     private Vector2 direction;
 
@@ -24,19 +25,26 @@ public class Motor : MonoBehaviour
         LimitPlayerSpeed();
 
         direction.x = manager.inputManager.GetHorizontalInput();
+
+        animator.SetFloat("Speed", Mathf.Abs(direction.x));
+
+        if (direction.x > 0.01)
+        {
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        }
+        else if (direction.x < -0.01)
+        {
+            transform.localScale = new Vector3(-1f, 1f, 1f);
+        }
+
+        animator.SetBool("Is_Jumping", !manager.ground.CheckOnGround());
+
     }
 
     private void FixedUpdate()
     {
         Move();
-        if(direction.x > 0)
-        {
-            transform.localScale = new Vector3(1f, 1f, 1f);
-        }
-        else if(direction.x < 0)
-        {
-            transform.localScale = new Vector3(-1f, 1f, 1f);
-        }
+
     }
 
     private void Move()
