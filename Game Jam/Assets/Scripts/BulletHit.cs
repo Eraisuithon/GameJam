@@ -22,10 +22,8 @@ public class BulletHit : MonoBehaviour
         Debug.Log(collisionGameObject.layer);
 
 
-        if (collisionGameObject.name != "Player")
-        {
-            BulletDie();
-        }
+        BulletDie();
+
         if (collisionGameObject.name == "Enemy(Clone)")
         {
             Instantiate(Effect, transform.position, Quaternion.identity);

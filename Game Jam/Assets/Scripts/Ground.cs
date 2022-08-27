@@ -17,16 +17,16 @@ public class Ground : MonoBehaviour
     public Vector3 offset;
     public Vector2 direction;
 
-    private Collider2D playerCollider;
+    private Collider2D ground;
 
     void Awake()
     {
-        playerCollider = GameObject.Find("Frictionless").GetComponent<Collider2D>();
+        ground = GameObject.Find("Frictionless").GetComponent<Collider2D>();
     }
 
     public bool CheckOnGround()
     {
-        bool isOnGround = GetComponent<Collider2D>().IsTouching(playerCollider);
+        bool isOnGround = GetComponent<Collider2D>().IsTouching(ground);
         return isOnGround;
     }
 
