@@ -37,7 +37,7 @@ public class Motor : MonoBehaviour
             transform.localScale = new Vector3(-1f, 1f, 1f);
         }
 
-        animator.SetBool("Is_Jumping", !manager.ground.CheckOnGround());
+        animator.SetBool("Is_Jumping", !manager.ground.onGround);
 
     }
 

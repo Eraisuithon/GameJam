@@ -5,14 +5,12 @@ using UnityEngine;
 public class Ground : MonoBehaviour
 {
     [Header("Privates")]
-    [SerializeField] private bool onGround;
     [SerializeField] private float friction;
     [SerializeField] private Animator animator;
     public float GetFriction => friction;
-    public bool GetOnGround => onGround;
+    public bool onGround = false;
 
     [Header("Variables")]
-    public bool ContinousGroundCheck;
     public LayerMask groundLayer;
     public Vector3 offset;
     public Vector2 direction;
@@ -24,16 +22,23 @@ public class Ground : MonoBehaviour
         ground = GameObject.Find("Frictionless").GetComponent<Collider2D>();
     }
 
-    public bool CheckOnGround()
+    public void OnCollisionStay2D(Collision2D col)
     {
-        bool isOnGround = GetComponent<Collider2D>().IsTouching(ground);
-        return isOnGround;
+        if (col.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            onGround = true;
+        }
     }
 
-    private void Update()
+    public void OnCollisionExit2D(Collision2D col)
     {
-        if (ContinousGroundCheck) onGround = CheckOnGround();
+        if (col.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            onGround = false;
+        }
     }
+
+
 
     private void OnDrawGizmos()
     {

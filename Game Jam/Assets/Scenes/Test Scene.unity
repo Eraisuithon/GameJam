@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 24851407}
   - component: {fileID: 24851406}
   - component: {fileID: 24851408}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Frictionless
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94335664}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.38, y: 1.18, z: 0}
+  m_LocalPosition: {x: 11.68, y: -1.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -871,7 +871,6 @@ GameObject:
   - component: {fileID: 519993852}
   - component: {fileID: 519993855}
   - component: {fileID: 519993856}
-  - component: {fileID: 519993857}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1015,20 +1014,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!114 &519993857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519993851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71b337a70acf98b4e9814b428653fc50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1125544830}
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &653781064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1519,7 +1504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAQIezykQ8kXgIAABUFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1zmzAQ/SsenesOUNPEvbWO4/SQ2BOnkwuXNSxGYyExkog/Mv7vXQkwlJ4Q773dfbta+GRcmgpTq/RK8+xZZch+TJg7sy+TnnzCE+yV3PILdpp3ntnCicBrXsFyRXjowowq0Wqe/pR74cQBgbXkudLlMtvjQhlrCM5BGCRKK+uiJUGfE3aix3TuQs50iu7c6UKneTC50jFFaVH30iiKW2knbHS1TAWUFWbOdC+Pg1vmRiepn1bivKdKCG5aM8yeK9/stipQo+s240C9eQPf6LVAvi+syzaMXee5Qdta0nB+4JpG1CRlv1QztxLMofH1AaJ2ZeIw8paapM//8dPQ07lW5VNXN/T92IKnh1c4p2DsYLBD+KE3HvrxHEEcYCfwvUD5olZa1TIj0urahdYGo4f+9dbaosD00OON1RFYV/28g9HluB6uvvvTQvBy56ivswbYCuXH7S8fNV3MbzLsV8O0KQh1Lv4YfIP9cIda4pFrY4lqu5TO3k7V2knZ0s/MdVPbhdISPdyarlCCsOcNpbHjKxxxg7Ij5hHc19IWb7nuIxiFeLjXB8GI2qjj7bJMoY7PaIp1bQWX2Jt2xAvNaaGkbDZsOJMubFvrHNJB2L7m2b+rxXYwD2cYwN39LA/COJ9CNJt9n8dxDPH9Lr0Lmd89LqlPEJvGaDseujXZJ5e0Z91PZLLSUPltzzQcV/xSqqFBLnO1TTWiXDcpbs5RUxX6KrNlxmlCW7SWS3/h7DNhQqUHzJJbzcS3ujxZDUmfJWEV/1DWIQlb+N9Gwhx8W+aNxg+OR1e8S3Zl179QSwMEFAAACAgAABAh7N21plltAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tFJSoqWhSapBormFSZqBoWmabqKRiYmZpampaaKpRVKyuaFSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAABAh7PKRDyReAgAAFQUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAABAh7N21plltAAAAeAAAAAkAJAAAAAAAAAAAAAAAqwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABjAwAAAAA=
+    dataString: UEsDBBQAAAgIAAAQIewryEWqXwIAABUFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1zmzAQ/SsenesOuCaOe2ttx+nBiSduJxcua1iMxkJiJOGPZPzfuxJgKD0h3nu7+3a18Mm4NCUmVum15ulGpci+j5g7sy+jjnzGCxyU3PEPbDXvPLW5E4HXvIHlivDQhRlVoNU8+SEPwokDAivJM6WLVXrAhTLWEJyBMEiUVtZFS4I+R+xCj/HchVzpNJm50wed5sHoRscEpUXdSSeTqJG2wlpXyURAUWLqTHfyKLhnrnWS+mkkznuihOCmMcPstfTN7socNbpuUw7UmzfwjV5z5Ifcumz92NcsM2gbSxquS65pRHVS9lPVcyvAHGtfJxCVKxPNHrylOunmP34cejrTqnhu64a+H5vz5PgG1wSM7Q22Dy8746EfzxnEEfYC33OUL2qtVSVTIq2uXGhlcLLsXu+tLXJMjh1eWx2AVdnNOxhcjuvh5ru/LAQv9o76Oq2BnVB+3P7yUdPF/CLDfjVMk4JQ5+KPwd9w6O9QQzxxbSxRTZfS2durSjspW/mZuW4qu1Baoocb0yVKEPa6pTR2eIUDrld2wDyB+1qa4g3XfgSDEA93+iAYUFt1vl+WydV5gyZ/razgEjvTjnihOS2UlPWG9WfShu0qnUHSCztUPP13tdge5uEUA5g9TrMgjLIxTKbTh3kURRA97pNZyPzucUl9gtjWRpvx0K3JLrmkPWt/IqO1htJve6rhvOYfheob5DJTu0Qjytc6xd05aqpCX2W6SjlNaIfWcukvnH3GTKjkiGl8rxn7VlcXqyHussSs5CdlHRKzhf9txMzB92XeajxxPLvibbIbu/0FUEsDBBQAAAgIAAAQIezdtaZZbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrRSUqKloUmqQaK5hUmagaFpmm6ikYmJmaWpqWmiqUVSsrmhUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAQIewryEWqXwIAABUFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAQIezdtaZZbQAAAHgAAAAJACQAAAAAAAAAAAAAAKwCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAZAMAAAAA
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -2091,7 +2076,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.778169, y: 1}
+    m_SensorSize: {x: 1.7769679, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2152,7 +2137,7 @@ GameObject:
   - component: {fileID: 2078912752}
   - component: {fileID: 2078912755}
   - component: {fileID: 2078912754}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}

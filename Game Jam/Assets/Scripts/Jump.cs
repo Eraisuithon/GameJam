@@ -24,11 +24,9 @@ public class Jump : MonoBehaviour
 
     private void JumpTriggered()
     {
-        Debug.Log(manager.ground.CheckOnGround());
-        if (manager.ground.CheckOnGround())
+        Debug.Log(manager.ground.onGround);
+        if (manager.ground.onGround)
         {
-            Debug.Log("asdklfjladsj");
-
             //rb.velocity = new Vector2
             //{
             //    x = rb.velocity.x,
