@@ -342,6 +342,16 @@ namespace Pathfinding {
 		/// <summary>Called during either Update or FixedUpdate depending on if rigidbodies are used for movement or not</summary>
 		protected override void MovementUpdateInternal (float deltaTime, out Vector3 nextPosition, out Quaternion nextRotation) {
 			float currentAcceleration = maxAcceleration;
+            // My code <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------------------------------------------------------------------
+            if (velocity2D.x < 0.01f)
+            {
+				transform.localScale = new Vector3(-1f, 1f, 1f);
+            }
+			else if(velocity2D.x > 0.01f)
+            {
+				transform.localScale = new Vector3(1f, 1f, 1f);
+            }
+			// End of my code <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------------------------------------------------------------------
 
 			// If negative, calculate the acceleration from the max speed
 			if (currentAcceleration < 0) currentAcceleration *= -maxSpeed;

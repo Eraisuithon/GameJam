@@ -1536,7 +1536,7 @@ MonoBehaviour:
   heuristic: 2
   heuristicScale: 1
   threadCount: 1
-  maxFrameTime: 1
+  maxFrameTime: 10
   batchGraphUpdates: 0
   graphUpdateBatchingInterval: 0.2
   euclideanEmbedding:
@@ -1544,7 +1544,7 @@ MonoBehaviour:
     seed: 0
     pivotPointRoot: {fileID: 0}
     spreadOutCount: 1
-  showGraphs: 1
+  showGraphs: 0
 --- !u!4 &1301958573
 Transform:
   m_ObjectHideFlags: 0
@@ -1729,6 +1729,7 @@ MonoBehaviour:
   - {fileID: 222353675}
   enemyPrefabs:
   - {fileID: 1496264415841794010, guid: 9ad47a550ccf7d446a2a0ce3f6caef42, type: 3}
+  - {fileID: 5911220888140032360, guid: a17c5287bf1c9884bbab19362781ffb2, type: 3}
   seconds: 4
 --- !u!4 &1534671703
 Transform:
@@ -2076,7 +2077,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.7774049, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

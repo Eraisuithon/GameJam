@@ -24,7 +24,7 @@ public class BulletHit : MonoBehaviour
 
         BulletDie();
 
-        if (collisionGameObject.name == "Enemy(Clone)")
+        if (collisionGameObject.name.EndsWith("Enemy(Clone)"))
         {
             Instantiate(Effect, transform.position, Quaternion.identity);
             float hp = --collisionGameObject.GetComponent<Enemy>().hp;

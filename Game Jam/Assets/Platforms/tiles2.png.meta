@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -8541,10 +8541,10 @@ TextureImporter:
       tiles2_6: -334987324
       tiles2_135: 1619002829
       tiles2_208: 2145805962
-      tiles2_161: 763745311
-      tiles2_392: 1426834467
       tiles2_327: 427451209
+      tiles2_161: 763745311
       tiles2_194: -1059626395
+      tiles2_392: 1426834467
       tiles2_149: -895431232
       tiles2_95: 450046175
       tiles2_260: -1196508269
@@ -8675,11 +8675,11 @@ TextureImporter:
       tiles2_218: 176319472
       tiles2_205: 1242872848
       tiles2_108: 719350329
-      tiles2_33: 1660124692
+      tiles2_262: 1153824520
       tiles2_235: 502705257
       tiles2_129: -1865543585
+      tiles2_33: 1660124692
       tiles2_35: -522603045
-      tiles2_262: 1153824520
       tiles2_271: 2088506400
       tiles2_264: 1710622140
       tiles2_164: 1373705259
@@ -8693,13 +8693,13 @@ TextureImporter:
       tiles2_255: 555589829
       tiles2_251: -600243974
       tiles2_79: -548008980
+      tiles2_379: -1263370030
       tiles2_283: 805185175
+      tiles2_189: -1935579484
+      tiles2_148: 336817337
       tiles2_197: 960363235
       tiles2_160: -779742196
       tiles2_27: 1276592412
-      tiles2_148: 336817337
-      tiles2_189: -1935579484
-      tiles2_379: -1263370030
       tiles2_100: -1468625414
       tiles2_97: -1999461899
       tiles2_55: 233852713
@@ -8828,12 +8828,12 @@ TextureImporter:
       tiles2_317: -1536381577
       tiles2_170: -690226942
       tiles2_261: -1813276669
-      tiles2_306: -281630304
       tiles2_350: -123510887
       tiles2_157: -1446378806
+      tiles2_306: -281630304
       tiles2_121: -1237475719
-      tiles2_140: 1176765671
       tiles2_356: -1764000647
+      tiles2_140: 1176765671
       tiles2_8: -1023202567
       tiles2_81: 1351122882
       tiles2_346: 846984405
