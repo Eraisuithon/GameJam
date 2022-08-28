@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
     public Transform[] spawnPoints;
     public GameObject[] enemyPrefabs;
-    public int seconds = 2;
+    public int seconds = 1;
     private float timer = 0;
 
 

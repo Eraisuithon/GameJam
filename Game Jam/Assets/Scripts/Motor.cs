@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(PlayerManager))]
 public class Motor : MonoBehaviour
@@ -71,6 +72,12 @@ public class Motor : MonoBehaviour
         };
     }
 
-  
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.name.EndsWith("Enemy(Clone)"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
 
 }

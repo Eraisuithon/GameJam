@@ -15,12 +15,7 @@ public class Ground : MonoBehaviour
     public Vector3 offset;
     public Vector2 direction;
 
-    private Collider2D ground;
 
-    void Awake()
-    {
-        ground = GameObject.Find("Frictionless").GetComponent<Collider2D>();
-    }
 
     public void OnCollisionStay2D(Collision2D col)
     {
